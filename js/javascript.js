@@ -1,39 +1,39 @@
 // counter js 
-// var Cont = { val: 0 },
-//   NewVal = 100;
-// TweenLite.to(Cont, 2, {
-//   val: NewVal,
-//   roundProps: "val",
-//   onUpdate: function () {
-//     document.getElementById("counter").innerHTML = Cont.val;
-//   }
-// });
-// // counter js 
-// // loading animation js
-// var loading_bar = CSSRulePlugin.getRule(".load_wrapper:after");
-// const load = gsap.timeline();
-// load.to(loading_bar ,{
-//     duration:2,
-//     cssRule:{
-//        width:"100%"
-//     }
-// });
-// load.to(".load_wrapper #counter",{
-//         opacity:1,
-//         delay:-1.7
-// });
-// load.to(".load_wrapper #counter",{
-//         opacity:0,
-//         delay:-0.2
-// });
-// load.to(".load_wrapper",{
-//     height:0,
-//     duration:1,
-//     ease: Circ.easeOut
-// });
-// load.to(".load_wrapper",{
-//     zIndex:0
-// });
+var Cont = { val: 0 },
+  NewVal = 100;
+TweenLite.to(Cont, 2, {
+  val: NewVal,
+  roundProps: "val",
+  onUpdate: function () {
+    document.getElementById("counter").innerHTML = Cont.val;
+  }
+});
+// counter js 
+// loading animation js
+var loading_bar = CSSRulePlugin.getRule(".load_wrapper:after");
+const load = gsap.timeline();
+load.to(loading_bar ,{
+    duration:2,
+    cssRule:{
+       width:"100%"
+    }
+});
+load.to(".load_wrapper #counter",{
+        opacity:1,
+        delay:-1.7
+});
+load.to(".load_wrapper #counter",{
+        opacity:0,
+        delay:-0.2
+});
+load.to(".load_wrapper",{
+    height:0,
+    duration:1,
+    ease: Circ.easeOut
+});
+load.to(".load_wrapper",{
+    zIndex:0
+});
 // loading animation js
 // First Step
 var mainmenu = CSSRulePlugin.getRule(".main_menu_list .main_list"); 
