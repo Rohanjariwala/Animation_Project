@@ -37,7 +37,7 @@ body{
     align-self: flex-end;
     margin: 0 0 75px 90px;
     position: relative;
-    z-index: 11;
+    z-index: 12;
 }
 .main_menu_list .main_list{
     font-size: 211px;
@@ -80,10 +80,10 @@ body{
     z-index: 2;
 }
 .second_menu{
-    align-self: flex-end;
     position: relative;
-    z-index: 10;
+    z-index: 11;
     transform: translateX(100%);
+    padding-top: 75px;
 }
 .second_menu .second_menu_inner{
     transform-origin: left top;
@@ -118,4 +118,44 @@ body{
 .second_menu_inner.second_step_active .second_list:hover{
     opacity:1 !important;
     font-weight:900 !important;
+}
+.video_list_part{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 890px;
+    padding-top: 75px;
+}
+.video_list_part .video_list{
+    height: 500px;
+    position: relative;
+    margin-bottom: 25px;
+    transform: translateX(900px);
+}
+.video_list_part .video_list img{
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform: scaleX(5.5);
+}
+.video_list_part .video_list .content{
+    position: absolute;
+    bottom: 25px;
+    left: 34px;
+}
+.video_list_part .video_list .content span{
+    font-size: 17px;
+    font-family: "Red Hat Display";
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.video_list_part .video_list .content h3{
+    font-family: "Red Hat Display";
+    font-size: 37px;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
